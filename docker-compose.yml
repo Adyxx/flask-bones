@@ -25,7 +25,7 @@ services:
     image: "memcached:alpine"
   postgres:
     image: "postgres:alpine"
-       restart: always
+    restart: always
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
@@ -36,4 +36,3 @@ services:
     restart: always
     ports:
       - 8080:8080
-      
